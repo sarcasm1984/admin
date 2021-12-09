@@ -5,7 +5,7 @@ let App = () => {
   const element = (
     <div>
       <Header/>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
   return element;

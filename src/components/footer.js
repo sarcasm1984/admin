@@ -1,7 +1,7 @@
 let Footer = () => {
     const element = (
-        <div className="navbar navbar-light bg-light static-bottom">
-            <div className="container">
+        <div className="navbar navbar-light bg-dark static-bottom">
+            <div className="container-fluid">
                 <div>
                     <span>&copy; 2021 Smartbits</span>
                 </div>
