@@ -1,11 +1,13 @@
 import Header from '../src/components/header';
-// import Footer from '../src/components/footer';
+import Body from '../src/components/body';
+import Footer from '../src/components/footer';
 
 let App = () => {
   const element = (
-    <div>
+    <div className="d-flex flex-column overflow-hidden min-vh-100 vh-100">
       <Header/>
-      {/* <Footer/> */}
+      <Body />
+      <Footer/>
     </div>
   );
   return element;
