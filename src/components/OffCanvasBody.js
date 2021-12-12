@@ -1,6 +1,6 @@
 let OffCanvasBody = () => {
     const element = (
-        <div>
+        <>
             <div className="offcanvas-header navbar-dark bg-dark shadow">
                 <h5 className="offcanvas-title navbar-brand" id="offcanvasWithBothOptionsLabel">SwipeMore</h5>
                 <button type="button" className="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -14,7 +14,7 @@ let OffCanvasBody = () => {
                 <a className="nav-link" href="/#"><i className="bi bi-people-fill"></i> Permissions</a>
                 <a className="nav-link" href="/#"><i className="bi bi-box-arrow-right"></i> Logout</a>
             </div>
-        </div>
+        </>
     );
     return element;
 }
