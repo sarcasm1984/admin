@@ -10,7 +10,7 @@ let Header = () => {
     const element = (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow">
             <div className="container">
-                {(vp_width > 600) ? (
+                {(vp_width > 800) ? (
                     <>
                     <button type="button" className="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
                          <span className="navbar-toggler-icon"></span>
