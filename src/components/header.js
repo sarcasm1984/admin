@@ -15,12 +15,12 @@ let Header = () => {
                     <button type="button" className="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
                          <span className="navbar-toggler-icon"></span>
                     </button>
-                    <a className="navbar-brand" href="/#">SwipeMore</a>
+                    <a className="navbar-brand" href="/#">BookOne</a>
                     <OffcanvasOutlineLargeport />
                     </>
                     ) : (
                     <>
-                    <a className="navbar-brand" href="/#">SwipeMore</a>
+                    <a className="navbar-brand" href="/#">BookOne</a>
                     <button type="button" className="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
                          <span className="navbar-toggler-icon"></span>
                     </button>
