@@ -1,5 +1,6 @@
 import Home from '../components/home';
-import Login from '../components/login';
+import Signin from '../components/signin';
+import Signup from '../components/signup';
 import {Route, Routes} from 'react-router-dom';
 
 let Body = () => {
@@ -7,7 +8,8 @@ let Body = () => {
       <div className="flex-grow-1 overflow-auto mb-0">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/signin" element={<Signin />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
       </div>
     );

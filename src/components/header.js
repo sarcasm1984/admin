@@ -1,32 +1,16 @@
-import OffcanvasOutlineSmallport from './OffcanvasOutlineSmallport';
-import OffcanvasOutlineLargeport from './OffcanvasOutlineLargeport';
-import useWindowSize from '../common/useWindowSize';
+import OffCanvasBody from './OffCanvasBody';
 import './header.css';
 
 let Header = () => {
-    
-    const [vp_width] = useWindowSize();
 
     const element = (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow">
             <div className="container">
-                {(vp_width > 650) ? (
-                    <>
-                    <button type="button" className="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-                         <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <a className="navbar-brand" href="/#">BookOne</a>
-                    <OffcanvasOutlineLargeport />
-                    </>
-                    ) : (
-                    <>
-                    <a className="navbar-brand" href="/#">BookOne</a>
-                    <button type="button" className="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-                         <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <OffcanvasOutlineSmallport />
-                    </>
-                )}
+                <a className="navbar-brand" href="/">BookOne</a>
+                <button type="button" className="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <OffCanvasBody/>
             </div>
         </nav>
     );
