@@ -8,10 +8,9 @@ let OffCanvasBody = () => {
             <div className="offcanvas-body">
                 <a className="nav-link" href="/"><i className="bi bi-house-fill"></i> Home</a>
                 <a className="nav-link" href="/#"><i className="bi bi-ui-checks"></i> Bookings</a>
-                <a className="nav-link" href="/#"><i className="bi bi-inboxes-fill"></i> Customers</a>
+                <a className="nav-link" href="/#"><i className="bi bi-people-fill"></i> Customers</a>
                 <a className="nav-link" href="/#"><i className="bi bi-wallet-fill"></i> Vendors</a>
-                <a className="nav-link" href="/#"><i className="bi bi-person-check-fill"></i> Change Password</a>
-                <a className="nav-link" href="/#"><i className="bi bi-people-fill"></i> Permissions</a>
+                <a className="nav-link" href="/changepwd"><i className="bi bi-person-check-fill"></i> Change Password</a>
                 <a className="nav-link" href="/#"><i className="bi bi-box-arrow-right"></i> Logout</a>
             </div>
         </div>
