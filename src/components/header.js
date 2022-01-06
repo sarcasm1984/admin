@@ -1,4 +1,4 @@
-import OffCanvasBody from './OffCanvasBody';
+import OffCanvas from './offcanvas';
 import './header.css';
 
 let Header = () => {
@@ -10,7 +10,7 @@ let Header = () => {
                 <button type="button" className="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <OffCanvasBody/>
+                <OffCanvas/>
             </div>
         </nav>
     );
