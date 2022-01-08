@@ -1,6 +1,17 @@
+import { useContext } from 'react';
+import { authStore } from '../store/authStore';
+import {login} from '../store/actions';
+import LoginService from '../backend/loginservice';
 import './signin.css';
 
 let Signin = () => {
+    let auth = useContext(authStore);
+    const {adispatch} = auth;
+
+    const signIn = () => {
+        adispatch({type:login});
+        LoginService.Login();
+    }
 
     const passwordShowHide = () => {
         var x = document.getElementById("floatingPassword");
@@ -41,7 +52,7 @@ let Signin = () => {
                     <div className="card-footer">
                         <div className="d-grid gap-2 d-md-flex justify-content-md-end">
                         <a href="/signup">Not an user?</a>
-                        <button type="button" className="btn btn-primary btn-sm">Sign In</button>
+                        <a href="/" type="button" className="btn btn-primary btn-sm" onClick={signIn}>Sign In</a>
                         <button type="button" className="btn btn-outline-secondary btn-sm">Reset</button>
                         </div>
                     </div>

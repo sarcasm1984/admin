@@ -1,10 +1,10 @@
-let Home = () => {
+let Vendors = () => {
     const element = (
         <div className="container">
-            <p>Home</p>
+            <p>Vendors</p>
         </div>
     );
     return element;
 }
 
-export default Home;
+export default Vendors;

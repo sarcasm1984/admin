@@ -1,7 +1,6 @@
 let Signup = () => {
-
     const element = (
-        <div className="page-wrap d-flex flex-row align-items-center">
+    <div className="page-wrap d-flex flex-row align-items-center">
         <div className="container">
             <div className="row justify-content-center">
             <div className="col-lg-8 gy-4">
@@ -33,7 +32,7 @@ let Signup = () => {
                     </div>
                     <div className="card-footer">
                         <div className="row">
-                        <span className="card-text">Already have an account? <a href="/signin">Sign In</a></span>
+                        <span className="card-text">Already have an account? <a href="/">Sign In</a></span>
                         </div>
                         <div className="d-grid gap-2 d-md-flex justify-content-md-end">
                         <button type="button" className="btn btn-primary btn-sm">Sign Up</button>
