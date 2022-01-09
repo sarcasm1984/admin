@@ -1,5 +1,5 @@
 const login = "LOGIN";
 const logout = "LOGOUT";
-const setState = "SETSTATE";
+const fetch = "FETCH";
 
-export {login, logout, setState};
+export {login, logout, fetch};

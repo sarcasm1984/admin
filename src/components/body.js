@@ -8,21 +8,20 @@ import Offerings from './offerings';
 import Customers from './customers';
 import Vendors from './vendors';
 import {Route, Routes} from 'react-router-dom';
-// import { useContext } from 'react';
-// import { authStore } from '../store/authStore';
-// import {setState} from '../store/actions';
-import LoginService from '../backend/loginservice';
+import { useContext, useEffect } from 'react';
+import { authStore } from '../store/authStore';
+import {fetch} from '../store/actions';
 
 let Body = () => {
-    let state = LoginService.fetch();
-    // let auth = useContext(authStore);
-    // const {adispatch} = auth;
-    // adispatch({type:setState, customstate:state});
-    // console.log(auth.state);
+    let auth = useContext(authStore);
+    const {dispatch} = auth;
     
+    useEffect(() => {
+      dispatch({type:fetch});
+    }, []);
 
     const element = (
-        (state.loggedIn === 'true') ?
+        (auth.state.loggedIn === 'true') ?
         (<div className="flex-grow-1 overflow-auto mb-0">
           <Routes>
             <Route path="/" element={<Home />} />

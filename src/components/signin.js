@@ -1,16 +1,15 @@
 import { useContext } from 'react';
 import { authStore } from '../store/authStore';
 import {login} from '../store/actions';
-import LoginService from '../backend/loginservice';
+import {Link} from "react-router-dom";
 import './signin.css';
 
 let Signin = () => {
     let auth = useContext(authStore);
-    const {adispatch} = auth;
+    const {dispatch} = auth;
 
     const signIn = () => {
-        adispatch({type:login});
-        LoginService.Login();
+        dispatch({type:login});
     }
 
     const passwordShowHide = () => {
@@ -51,7 +50,7 @@ let Signin = () => {
                     </div>
                     <div className="card-footer">
                         <div className="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <a href="/signup">Not an user?</a>
+                        <Link to="/signup">Not an user?</Link>
                         <a href="/" type="button" className="btn btn-primary btn-sm" onClick={signIn}>Sign In</a>
                         <button type="button" className="btn btn-outline-secondary btn-sm">Reset</button>
                         </div>
