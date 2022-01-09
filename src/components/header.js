@@ -7,11 +7,11 @@ import {Link} from "react-router-dom";
 
 let Header = () => {
     let auth = useContext(authStore);
-    const {dispatch} = auth;
 
     useEffect(() => {
+        const {dispatch} = auth;
         dispatch({type:fetch});
-    }, []);
+    }, []);// eslint-disable-line react-hooks/exhaustive-deps
 
     const element = (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow">

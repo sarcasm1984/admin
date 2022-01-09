@@ -14,11 +14,11 @@ import {fetch} from '../store/actions';
 
 let Body = () => {
     let auth = useContext(authStore);
-    const {dispatch} = auth;
     
     useEffect(() => {
+      const {dispatch} = auth;
       dispatch({type:fetch});
-    }, []);
+    }, []);// eslint-disable-line react-hooks/exhaustive-deps
 
     const element = (
         (auth.state.loggedIn === 'true') ?
