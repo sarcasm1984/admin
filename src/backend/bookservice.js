@@ -1,12 +1,13 @@
 let booking = () => {
     const books = [{
-        bookingid: "",
-        eventid: "",
-        serviceid: "",
+        bookingid: "1234",
+        offeringid: "",
         vendorid: "",
         customerid: "",
         eventdate: "",
-        eventvenue:""
+        eventvenue:"",
+        starttime:"",
+        endtime:""
     }];
     return books;
 }

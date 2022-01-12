@@ -7,6 +7,7 @@ import Bookings from './bookings';
 import Offerings from './offerings';
 import Customers from './customers';
 import Vendors from './vendors';
+import NotLoggedIn from './notloggedin';
 import {Route, Routes} from 'react-router-dom';
 import { useContext, useEffect } from 'react';
 import { authStore } from '../store/authStore';
@@ -37,6 +38,10 @@ let Body = () => {
           <Routes>
             <Route path="/" element={<Signin />} />
             <Route path="/signup" element={<Signup />} />
+            <Route path="/bookings" element={<NotLoggedIn />} />
+            <Route path="/offerings" element={<NotLoggedIn />} />
+            <Route path="/customers" element={<NotLoggedIn />} />
+            <Route path="/vendors" element={<NotLoggedIn />} />
             <Route path="*" element = {<Error/>} />
           </Routes>
         </div>
